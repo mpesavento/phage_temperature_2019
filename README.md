@@ -6,3 +6,8 @@ An examination of thermodynamics in a variety of playa dwellings:
 * shiftpod 1
 * shiftpod 2
 * H12 hexayurt
+
+http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll
+
+<iframe width=1200 height=800, frameborder="0", scrolling="no"
+src="figures/phage_temperature_2019.html">

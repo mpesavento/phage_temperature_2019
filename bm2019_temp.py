@@ -28,6 +28,9 @@ DATA_PATH = os.path.join(ROOT_DIR, "data")
 # where we save the figure
 FIGURE_PATH = os.path.join(ROOT_DIR, "figures")
 
+PACIFIC_TZ = "US/Pacific"
+UTC_TZ = "UTC"
+
 @dataclass
 class TemperatureSource():
     """
@@ -40,21 +43,23 @@ class TemperatureSource():
     datetime_col: str='datetime'
     temp_col: str='temperature'
     temp_units: str="C"
-    data_tz: str="UTC"
-    display_tz: str="PST"
+    data_tz: str=PACIFIC_TZ
+    display_tz: str=PACIFIC_TZ
     tags: list=field(default_factory=list)
     # data: pd.DataFrame=field(default_factory=_read_csv)
 
     @staticmethod
     def _f2c(f):
+        """Fahrenheit to Celsius"""
         return (f - 32) * (5.0 / 9.0)
 
     @staticmethod
     def _c2f(c):
+        """Celsius to Fahrenheit"""
         return c * (9.0 / 5.0) + 32
 
 
-    def read_csv(self, header=0):
+    def load_data(self, header=0):
         use_cols = [self.datetime_col, self.temp_col]
         self.data = pd.read_csv(
             os.path.join(self.path, self.filename),
@@ -66,7 +71,13 @@ class TemperatureSource():
         self.data.rename(columns={
             self.datetime_col: 'datetime',
             self.temp_col: f'temperature {self.temp_units}'}, inplace=True)
+
+        # align timestamps
         self.data["datetime"] = pd.to_datetime(self.data["datetime"])
+        print("Tz: {}->{}".format(self.data_tz, self.display_tz))
+        self.data["datetime"] = self.data["datetime"].dt.tz_localize(self.data_tz)\
+            .dt.tz_convert(self.display_tz)
+
         # add both conversions
         if self.temp_units == "C":
             self.data['temperature F'] = self.data[
@@ -105,13 +116,15 @@ REGISTERED_DATA = [
         filename = 'burningman_2019_myq_h12yurt.csv',
         recording_location = "h12yurt",
         owner = "myq",
-        tags = ["AC?"]
+        tags = ["AC?"],
+        data_tz = UTC_TZ
     ),
     TemperatureSource(
         filename = 'burningman_2019_bunnie_shiftpod.csv',
         recording_location = "shiftpod1",
         owner = "bunnie",
-        tags = ["AC"]
+        tags = ["AC"],
+        data_tz = UTC_TZ
     ),
 ]
 
@@ -120,12 +133,12 @@ REGISTERED_DATA = [
 def load_data_files(data_sources: list=REGISTERED_DATA):
     for source in data_sources:
         print(source.filename)
-        source.read_csv()
+        source.load_data()
 
 
 def get_source_data_trace(source, units="F"):
     if not hasattr(source, "data"):
-        source.read_csv()
+        source.load_data()
 
     field = f"temperature {units}"
     trace = go.Scatter(
