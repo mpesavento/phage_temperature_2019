@@ -1,0 +1,15 @@
+# To create environment and install dependencies:
+#    `conda env create -f environment.yml`
+# To activate environment:
+#    `conda activate phage_data`
+# To add repository to $PYTHONPATH (via conda.pth):
+#    `python setup.py develop`
+name: phage_data
+
+dependencies:
+  - python=3.8
+  - pip>=10.0.1
+  - ipython
+  - pip:
+    # load all requirements using pip, making package deployment easier
+    - -r requirements.txt
