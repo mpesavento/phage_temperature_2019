@@ -4,3 +4,4 @@ pandas==0.23.4
 matplotlib
 seaborn
 plotly
+astral==1.10
