@@ -7,7 +7,7 @@
 name: phage_data
 
 dependencies:
-  - python=3.8
+  - python=3.7
   - pip>=10.0.1
   - ipython
   - pip:
