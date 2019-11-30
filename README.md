@@ -9,5 +9,6 @@ An examination of thermodynamics in a variety of playa dwellings:
 
 http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll
 
-<iframe width=1200 height=800 frameborder="0" scrolling="no"
-src="figures/phage_temperature_2019.html"></iframe>
+<iframe width=1200 height=800 style="border:none;" frameborder="0" 
+scrolling="no" seamless="seamless"
+src="https://mpesavento.github.io/phage_temperature_2019/figures/phage_temperature_2019.html"></iframe>
