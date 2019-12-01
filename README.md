@@ -10,8 +10,10 @@ An examination of thermodynamics in a variety of playa dwellings:
 <li>H12 hexayurt</li>
 </ul>
 
+<br>
 [http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll](http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll)
+<br>
 [https://app.getpocket.com/read/2720031856](https://app.getpocket.com/read/2720031856)
-
+<br>
 
 <iframe width="1200" height="800" style="border:none;" frameborder="0" scrolling="no" src="https://github.com/mpesavento/phage_temperature_2019/blob/master/figures/phage_temperature_F_2019.html?raw=true"></iframe>
