@@ -14,6 +14,4 @@ An examination of thermodynamics in a variety of playa dwellings:
 [https://app.getpocket.com/read/2720031856](https://app.getpocket.com/read/2720031856)
 
 
-<iframe width=1200 height=800 style="border:none;" frameborder="0" 
-scrolling="no" seamless="seamless"
-src="https://github.com/mpesavento/phage_temperature_2019/blob/master/figures/phage_temperature_F_2019.html?raw=true"></iframe>
+<iframe width="1200" height="800" style="border:none;" frameborder="0" scrolling="no" src="https://github.com/mpesavento/phage_temperature_2019/blob/master/figures/phage_temperature_F_2019.html?raw=true"></iframe>
