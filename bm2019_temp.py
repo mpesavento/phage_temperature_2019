@@ -435,7 +435,7 @@ def plot_period_averages(data_sources: list, sun_df: pd.DataFrame):
             width=1200,
             height=800,
             title="Dwelling 24H average temperature - BRC 2019",
-            xaxis=dict(title="date"),
+            xaxis=dict(title="time of day"),
             yaxis=dict(title=f"temperature (F)", range=y_range),
         ),
     )
