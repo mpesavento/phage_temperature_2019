@@ -8,6 +8,8 @@ An examination of thermodynamics in a variety of playa dwellings:
 * H12 hexayurt
 
 http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll
+https://app.getpocket.com/read/2720031856
+
 
 <iframe width=1200 height=800 style="border:none;" frameborder="0" 
 scrolling="no" seamless="seamless"
