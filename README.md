@@ -10,7 +10,7 @@ An examination of thermodynamics in a variety of playa dwellings:
 * H12 hexayurt (no cooling)
 
 
-![BRC temperatures](figures/phage_temperature_F_2019.png)
+![BRC temperatures](docs/figures/phage_temperature_F_2019.png)
 
-![24H average temperature](figures/phage_average_temperature_2019.png)
+![24H average temperature](docs/figures/phage_average_temperature_2019.png)
 
