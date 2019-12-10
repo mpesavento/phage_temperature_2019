@@ -4,7 +4,7 @@ Comparison of dwelling temperatures at The Phage, 4:00 &amp; Esp, Burning Man 20
 
 An examination of thermodynamics in a variety of playa dwellings:
 * baseline outdoor recording (Taken from Altitude Lounge @ 845&C)
-* shiftpod 1 (no cooling/shade)
+* shiftpod 1 (A/C, no shade)
 * shiftpod 2 - mjp (light use of swamp cooler, shade structure)
 * shiftpod 2 - pnelson (heavy use of swamp cooler, shade structure, blastshield)
 * H12 hexayurt (no cooling)
