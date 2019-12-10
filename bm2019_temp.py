@@ -48,7 +48,7 @@ BLACK_ROCK_CITY_ELEVATION = 1100  # meters
 # smarter would be to check the data registry for max/min and fid the nearest order of 10
 TEMPERATURE_RANGE = (50, 110)
 
-FIGURE_DIMENSIONS = (1024, 768)  # (w, h), in pixels
+FIGURE_DIMENSIONS = (900, 600)  # (w, h), in pixels
 
 LINE_OPACITY = 0.8
 
