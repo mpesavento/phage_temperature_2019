@@ -33,7 +33,7 @@ except NameError as e:
 # repository location of the data
 DATA_PATH = os.path.join(ROOT_DIR, "data")
 # where we save the figures
-FIGURE_PATH = os.path.join(ROOT_DIR, "figures")
+FIGURE_PATH = os.path.join(ROOT_DIR, "docs/figures")
 
 # py_tz timezones
 PACIFIC_TZ = "US/Pacific"
@@ -47,6 +47,8 @@ BLACK_ROCK_CITY_ELEVATION = 1100  # meters
 # bounds on expected temperature range, for plotting
 # smarter would be to check the data registry for max/min and fid the nearest order of 10
 TEMPERATURE_RANGE = (50, 110)
+
+FIGURE_DIMENSIONS = (1024, 768)  # (w, h), in pixels
 
 LINE_OPACITY = 0.8
 
@@ -310,8 +312,8 @@ def plot_week_temperatures(data_sources: list, sun_df: pd.DataFrame, units="F"):
     fig = go.Figure(
         data=traces,
         layout=dict(
-            width=1200,
-            height=800,
+            width=FIGURE_DIMENSIONS[0],
+            height=FIGURE_DIMENSIONS[1],
             title="Dwelling temperature - BRC 2019",
             xaxis=dict(title="date"),
             yaxis=dict(title=f"temperature {units}", range=TEMPERATURE_RANGE),
@@ -432,8 +434,8 @@ def plot_period_averages(data_sources: list, sun_df: pd.DataFrame):
     fig = go.Figure(
         data=traces,
         layout=dict(
-            width=1200,
-            height=800,
+            width=FIGURE_DIMENSIONS[0],
+            height=FIGURE_DIMENSIONS[1],
             title="Dwelling 24H average temperature - BRC 2019",
             xaxis=dict(title="time of day"),
             yaxis=dict(title=f"temperature (F)", range=y_range),

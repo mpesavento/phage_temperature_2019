@@ -1,2 +1,9 @@
+title: Phage Dwelling Temperatures - 2019
+email: mike@peztek.com
+description: >
+  Comparison of dwelling temperatures at The Phage, 4:00 & Esp, Burning Man 2019
 theme: jekyll-theme-slate
 #theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
