@@ -1,5 +1,6 @@
 # Phage Dwelling Temperatures - Black Rock City 2019
 
+
 Comparison of dwelling temperatures at The Phage, 4:00 &amp; Esp, Burning Man 2019
 
 An examination of thermodynamics in a variety of playa dwellings:
@@ -9,8 +10,18 @@ An examination of thermodynamics in a variety of playa dwellings:
 * shiftpod 2 - pnelson (heavy use of swamp cooler, shade structure, blastshield)
 * H12 hexayurt (no cooling)
 
+Interactive temperature graphs here
+https://mpesavento.github.io/phage_temperature_2019/
+
 
 ![BRC temperatures](docs/figures/phage_temperature_F_2019.png)
 
 ![24H average temperature](docs/figures/phage_average_temperature_2019.png)
 
+
+## Study summary
+Shiftpod in the shade with active cooling is the best. Ventilation (pulling out the hot air from the top)
+works better than evaporative cooling, eg through a swamp cooler.
+
+A similar experiment was done here:
+https://blog.cjtrowbridge.com/2019/11/20/data-are-shiftpods-actually-cooler/
