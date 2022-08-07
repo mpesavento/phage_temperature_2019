@@ -21,7 +21,9 @@ https://mpesavento.github.io/phage_temperature_2019/
 
 ## Study summary
 Shiftpod in the shade with active cooling is the best. Ventilation (pulling out the hot air from the top)
-works better than evaporative cooling, eg through a swamp cooler.
+works better than evaporative cooling, eg through a 
+[swamp cooler](https://www.reddit.com/r/BurningMan/comments/6ol1ts/steps_to_build_a_figjam_bucket_cooler/).
 
 A similar experiment was done here:
 https://blog.cjtrowbridge.com/2019/11/20/data-are-shiftpods-actually-cooler/
+
